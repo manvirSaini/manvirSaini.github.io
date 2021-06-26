@@ -1,8 +1,3 @@
-/*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
@@ -339,9 +334,19 @@
 		// Get the button that opens the modal
 		var btn = document.getElementsByClassName("btn");
 
-
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close");
+
+		function setWrap(){
+			var width = (window.innerWidth) > 0? window.innerWidth : screen.width;
+			var r = document.querySelector(':root');
+
+			if(width > 480){
+				r.style.setProperty('--wrapping', 'nowrap');
+			}else{
+				r.style.setProperty('--wrapping', 'wrap');
+			}
+		};
 
 		// When the user clicks the button, open the modal 
 		btn[0].onclick = function() {
@@ -373,15 +378,19 @@
 		showSlides();
 
 		function showSlides() {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		slideIndex++;
-		if (slideIndex > slides.length) {slideIndex = 1}
-		slides[slideIndex-1].style.display = "block";
-		setTimeout(showSlides, 16500); // Change image every 2 seconds
-		}
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}
+			slides[slideIndex-1].style.display = "block";
+			setTimeout(showSlides, 16500); // Change image every 2 seconds
+		};
+
+		window.onload = function() {
+			setWrap();
+		};
 
 })(jQuery);

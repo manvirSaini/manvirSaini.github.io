@@ -4004,9 +4004,13 @@ input, select, textarea {
 	border-radius: 45px;
   }
 
+  :root{
+	--wrapping: wrap;
+  }
+
   .modal-grid{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: var(--wrapping);
 	justify-content: space-around;
 	padding: 5px;
   }
