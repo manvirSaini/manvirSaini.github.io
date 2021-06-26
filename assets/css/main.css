@@ -3349,7 +3349,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#header .logo span {
-				display: none;
+				display: display;
 			}
 
 			#header nav a[href="#menu"] {
@@ -4006,7 +4006,7 @@ input, select, textarea {
 
   .modal-grid{
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 5px;
   }
@@ -4035,10 +4035,22 @@ input, select, textarea {
 	  text-align: center;
   }
 
+  .modal-grid > div > div > h3 > i{
+	text-align: right;
+	font-size: 22px;
+	background-color: black;
+}
+
   .modal-grid > div > img{
 	border: 5px solid #3e4875;
 	width: 40%;
+	max-width: 250px;
 	border-radius: 30px;
+}
+
+.modal-grid > div > .slideshow-container{
+	border: 5px solid #3e4875;
+	max-width: 500px;
 }
 
  .modal-grid > div > section > ul{
@@ -4046,6 +4058,7 @@ input, select, textarea {
 	padding-top: 15px;
 	padding-left: 135px;
 	text-align: right;
+	overflow: break-word;
 }
 	.modal-grid > div > section > ul > span{
 		padding: 10px;
@@ -4140,7 +4153,7 @@ input, select, textarea {
   }
   
   .active, .dot:hover {
-	background-color: #717171;
+	background-color: #252525;
   }
   
   /* Fading animation */
