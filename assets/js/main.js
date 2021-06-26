@@ -341,7 +341,7 @@
 			var width = (window.innerWidth) > 0? window.innerWidth : screen.width;
 			var r = document.querySelector(':root');
 
-			if(width > 480){
+			if(width > 800){
 				r.style.setProperty('--wrapping', 'nowrap');
 			}else{
 				r.style.setProperty('--wrapping', 'wrap');
