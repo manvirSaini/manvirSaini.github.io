@@ -4039,6 +4039,11 @@ input, select, textarea {
 	  text-align: center;
   }
 
+  .modal-grid > div > div > p{
+	text-align: left;
+	padding: 3px;
+}
+
   .modal-grid > div > div > h3 > i{
 	text-align: right;
 	font-size: 22px;
@@ -4059,6 +4064,7 @@ input, select, textarea {
 
  .modal-grid > div > section > ul{
 	font-size: 20px;
+	padding: 10px;
 	padding-top: 15px;
 	padding-left: 135px;
 	text-align: right;
