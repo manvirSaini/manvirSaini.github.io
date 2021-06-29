@@ -332,7 +332,7 @@
 		var modal = document.getElementsByClassName('modal');
 
 		// Get the button that opens the modal
-		var btn = document.getElementsByClassName("btn");
+		var btn = document.getElementsByClassName("small");
 
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close");
